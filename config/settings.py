@@ -21,16 +21,14 @@ ALLOWED_HOSTS = config(
 )
 
 # Application definition
-
 INSTALLED_APPS = [
-    'cloudinary_storage',          # staticfiles se pehle
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cloudinary',                  # staticfiles ke baad
+    'cloudinary',                  # ye rehne do
 
     'corsheaders',
     "rest_framework",
@@ -41,6 +39,7 @@ INSTALLED_APPS = [
     "faculty",
     "contact",
 ]
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
